@@ -107,8 +107,8 @@ export const TailwindCSSIcon = ({ size = 28 }) => (
         y2="67.5555556%"
         id="linearGradient-1"
       >
-        <stop stop-color="#2298BD" offset="0%"></stop>
-        <stop stop-color="#0ED7B5" offset="100%"></stop>
+        <stop stopColor="#2298BD" offset="0%"></stop>
+        <stop stopColor="#0ED7B5" offset="100%"></stop>
       </linearGradient>
     </defs>
     <g>
@@ -171,9 +171,9 @@ export const PowerPointIcon = ({ size = 28 }) => (
         gradientTransform="translate(0 1756)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#ca4c28" />
-        <stop offset="0.5" stop-color="#c5401e" />
-        <stop offset="1" stop-color="#b62f14" />
+        <stop offset="0" stopColor="#ca4c28" />
+        <stop offset="0.5" stopColor="#c5401e" />
+        <stop offset="1" stopColor="#b62f14" />
       </linearGradient>
     </defs>
     <title>file_type_powerpoint</title>
@@ -227,13 +227,7 @@ export const YouTubeIcon = ({ size = 28 }) => (
     <title>Youtube-color</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g
-      id="Icons"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
-    >
+    <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g
         id="Color-"
         transform="translate(-200.000000, -368.000000)"

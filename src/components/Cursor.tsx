@@ -1,10 +1,10 @@
 "use client";
 
-import React, { use, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 export default function CustomCursor() {
   useEffect(() => {
-    let cursorinner = document.querySelector(".cursor2");
+    let cursorinner = document.querySelector(".cursor2") as HTMLElement;
     let a = document.querySelectorAll("a");
 
     document.addEventListener("mousemove", function (e) {
@@ -15,19 +15,32 @@ export default function CustomCursor() {
     });
 
     document.addEventListener("mousedown", function () {
-      cursorinner.classList.add("cursorinnerhover");
+      if (cursorinner) {
+        cursorinner.classList.add("cursorinnerhover");
+      }
     });
 
     document.addEventListener("mouseup", function () {
-      cursorinner.classList.remove("cursorinnerhover");
+      if (cursorinner) {
+        cursorinner.classList.remove("cursorinnerhover");
+      }
     });
+  }, []);
 
+  useEffect(() => {
+    const a = document.querySelectorAll("a");
     a.forEach((item) => {
       item.addEventListener("mouseover", () => {
-        cursorinner.classList.add("hover");
+        let cursorinner = document.querySelector(".cursor2") as HTMLElement;
+        if (cursorinner) {
+          cursorinner.classList.add("hover");
+        }
       });
       item.addEventListener("mouseleave", () => {
-        cursorinner.classList.remove("hover");
+        let cursorinner = document.querySelector(".cursor2") as HTMLElement;
+        if (cursorinner) {
+          cursorinner.classList.remove("hover");
+        }
       });
     });
   }, []);
