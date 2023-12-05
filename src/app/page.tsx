@@ -24,7 +24,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="container mx-auto">
+    <main className="container mx-auto px-4 md:px-0">
       <section
         className="hero flex flex-col md:flex-row my-14 md:my-28"
         id="about"
@@ -34,10 +34,10 @@ export default function Home() {
             <span className={`text-3xl font-vT323`}>
               Dentist - JS Developer
             </span>
-            <h1 className="text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-700">
+            <h1 className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-700">
               Sami Adel
             </h1>
-            <p className="text-2xl mt-10 font-coming_Soon text-justify leading-10">
+            <p className="text-base md:text-2xl mt-10 font-coming_Soon text-justify leading-10">
               a dental student at Faculty of Dentistry, Mansoura University. I
               am a self-taught web developer, I started learning web development
               in 2015. I am passionate about learning new technologies and
@@ -82,7 +82,7 @@ export default function Home() {
       >
         <div className="cv md:w-[45%] w-full md:mx-0 mx-4 md:mb-0 mb-4">
           <div className="cv__text top-10 mt-10">
-            <h1 className="text-7xl font-bold">My CV</h1>
+            <h1 className="text-3xl md:text-7xl font-bold">My CV</h1>
             <p className="text-2xl mt-10 font-coming_Soon text-justify leading-10">
               ooh 🥹, you want to know more about me, that's great. I have a CV
               that you can read it online. I hope you enjoy reading it.
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
         <div className="skills md:w-[55%] w-full md:pl-8 md:mx-0 mx-4">
           <div className="skills__text sticky top-10 mt-10">
-            <h1 className="text-7xl font-bold">My Skills</h1>
+            <h1 className="text-3xl md:text-7xl font-bold">My Skills</h1>
             <p className="text-2xl mt-10 font-coming_Soon text-justify leading-10">
               I have many skills, some of them are related to dentistry, and
               some of them are related to web development. I'm showing you my
@@ -107,51 +107,51 @@ export default function Home() {
             <div className="skills__text__content mt-10 grid grid-cols-2">
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">HTML</p>
+                <p className="text-xl md:text-3xl">HTML</p>
               </div>
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">CSS</p>
+                <p className="text-xl md:text-3xl">CSS</p>
               </div>
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">JavaScript</p>
+                <p className="text-xl md:text-3xl">JavaScript</p>
               </div>
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">React</p>
+                <p className="text-xl md:text-3xl">React</p>
               </div>
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">Next.js</p>
+                <p className="text-xl md:text-3xl">Next.js</p>
               </div>
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">Tailwind CSS</p>
+                <p className="text-xl md:text-3xl">Tailwind CSS</p>
               </div>
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">WordPress</p>
+                <p className="text-xl md:text-3xl">WordPress</p>
               </div>
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">Node Js</p>
+                <p className="text-xl md:text-3xl">Node Js</p>
               </div>
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">Mongo DB</p>
+                <p className="text-xl md:text-3xl">Mongo DB</p>
               </div>
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">GraphQL</p>
+                <p className="text-xl md:text-3xl">GraphQL</p>
               </div>
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">MySQL</p>
+                <p className="text-xl md:text-3xl">MySQL</p>
               </div>
               <div className="skills__text__content__item flex items-center gap-4 hover:scale-105 transition-all">
                 <Sparkle size={30} />
-                <p className="text-3xl">Redux ToolKit</p>
+                <p className="text-xl md:text-3xl">Redux ToolKit</p>
               </div>
             </div>
           </div>
@@ -160,7 +160,7 @@ export default function Home() {
       <section className="projects my-14 md:my-28 static" id="projects">
         <div className="projects__text sticky top-0 py-10 bg-zinc-900 z-50">
           <div className="projects__text__content">
-            <h1 className="text-7xl font-bold">My Projects</h1>
+            <h1 className="text-3xl md:text-7xl font-bold">My Projects</h1>
             <p className="text-2xl mt-10 font-coming_Soon text-justify leading-10">
               I have worked on many projects, some of them are personal
               projects, and some of them are freelance projects. I have worked
@@ -169,7 +169,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="projects__image p-14 static grid grid-cols-3 gap-4">
+        <div className="projects__image md:p-14 static grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="img-card relative shadow-md rounded-3xl hover:rounded-xl overflow-hidden cursor-pointer aspect-video">
             <img src="/images/skymiles.png" alt="Sami Adel" />
             <div className="img-card__overlay absolute bottom-0 left-0 w-full h-14 bg-zinc-900 opacity-80 hover:opacity-90 transition-all duration-500 ease-in-out">
@@ -274,18 +274,18 @@ export default function Home() {
       <section className="contact my-14 md:my-28 static" id="contact">
         <div className="contact__text sticky top-0 py-10 bg-zinc-900 z-50">
           <div className="contact__text__content">
-            <h1 className="text-7xl font-bold">Contact Me</h1>
+            <h1 className="text-3xl md:text-7xl font-bold">Contact Me</h1>
             <p className="text-2xl mt-10 font-coming_Soon text-justify leading-10">
               I am available for freelance work. Connect with me via email:
               <a
                 href="mailto:sami.adel.galal02@gmail.com"
-                className="text-sky-400 font-bold ml-2"
+                className="text-sky-400 font-bold ml-2 block md:inline-block"
                 target="_blank"
               >
                 sami.adel.galal02@gmail.com
               </a>
             </p>
-            <div className="contact__text__content__social mt-10 flex items-center gap-4">
+            <div className="contact__text__content__social mt-10 flex items-center gap-4 flex-wrap">
               <a
                 href="https://www.facebook.com/samiadelgalal/"
                 className="bg-sky-400 p-4 rounded-full text-white text-2xl font-bold mt-10 inline-block button font-sans"
