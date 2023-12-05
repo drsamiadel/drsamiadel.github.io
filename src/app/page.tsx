@@ -30,7 +30,7 @@ export default function Home() {
         id="about"
       >
         <div className="hero__text w-full md:w-[45%] static">
-          <div className="hero__text__content sticky top-10 mt-10 md:mb-60 md:mx-0 mx-4">
+          <div className="hero__text__content sticky top-10 mt-10 md:mb-60">
             <span className={`text-xl md:text-3xl font-vT323`}>
               Dentist - JS Developer
             </span>
@@ -80,7 +80,7 @@ export default function Home() {
         className="hero flex flex-col md:flex-row my-14 md:my-28"
         id="skills"
       >
-        <div className="cv md:w-[45%] w-full md:mx-0 mx-4 md:mb-0 mb-4">
+        <div className="cv md:w-[45%] w-full md:mb-0 mb-4">
           <div className="cv__text top-10 mt-10">
             <h1 className="text-3xl md:text-7xl font-bold">My CV</h1>
             <p className="text-base md:text-2xl mt-10 font-coming_Soon text-justify leading-10">
@@ -90,13 +90,13 @@ export default function Home() {
             <a
               target="_blank"
               href="https://drive.google.com/file/d/13DWZwYycFclr_wd954v8KyLclCci0GI_/view?usp=sharing"
-              className="bg-sky-400 px-8 py-4 rounded-full text-white text-2xl font-bold mt-10 inline-block button font-sans"
+              className="bg-sky-400 md:px-8 md:py-4 px-4 py-2 rounded-full text-white text-xl md:text-2xl font-bold mt-10 inline-block button font-sans"
             >
               <EyeIcon className="inline-block" /> View CV
             </a>
           </div>
         </div>
-        <div className="skills md:w-[55%] w-full md:pl-8 md:mx-0 mx-4">
+        <div className="skills md:w-[55%] w-full md:pl-8">
           <div className="skills__text sticky top-10 mt-10">
             <h1 className="text-3xl md:text-7xl font-bold">My Skills</h1>
             <p className="text-base md:text-2xl mt-10 font-coming_Soon text-justify leading-10">
