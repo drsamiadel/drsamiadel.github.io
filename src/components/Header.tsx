@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="container mx-auto flex justify-center my-10 md:my-20">
+    <header className="container mx-auto md:flex justify-center my-10 md:my-20 hidden">
       <nav className="flex">
         <ul className="menu flex text-center SMN_effect-16">
           <li>
