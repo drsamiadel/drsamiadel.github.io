@@ -5,6 +5,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
@@ -21,27 +23,26 @@ const projects = [
     url: "https://skymiles23.com",
     image: "/assets/skymiles.png",
   },
-    {
-        name: "Smart Vision",
-        url: "https://smartvision-uae.com",
-        image: "/assets/smartvision.png",
-    },
-    {
-        name: "eCommerce",
-        url: "#",
-        image: "/assets/volt.png",
-    },
-    {
-        name: "Store",
-        url: "https://drsamiadel.github.io/sol-store",
-        image: "/assets/store.png",
-    },
-    {
-        name: "PowerPoint Course",
-        url: "https://www.youtube.com/watch?v=rVkqQuhh9GI",
-        image: "/assets/powerpoint.jpg",
-    }
-
+  {
+    name: "Smart Vision",
+    url: "https://smartvision-uae.com",
+    image: "/assets/smartvision.png",
+  },
+  {
+    name: "eCommerce",
+    url: "#",
+    image: "/assets/volt.png",
+  },
+  {
+    name: "Store",
+    url: "https://drsamiadel.github.io/sol-store",
+    image: "/assets/store.png",
+  },
+  {
+    name: "PowerPoint Course",
+    url: "https://www.youtube.com/watch?v=rVkqQuhh9GI",
+    image: "/assets/powerpoint.jpg",
+  },
 ];
 
 export default function ProjectsSection() {
@@ -60,7 +61,10 @@ export default function ProjectsSection() {
       >
         <CarouselContent className="w-full">
           {projects.map((project) => (
-            <CarouselItem key={project.name} className="slide basis-full md:basis-1/3">
+            <CarouselItem
+              key={project.name}
+              className="slide basis-full md:basis-1/3"
+            >
               <div className="m-4 p-4 border shadow-md border-white/20 rounded-lg aspect-video flex flex-col">
                 <Image
                   src={project.image}
@@ -80,6 +84,8 @@ export default function ProjectsSection() {
             </CarouselItem>
           ))}
         </CarouselContent>
+        <CarouselNext className="absolute top-1/2 -right-2 transform -translate-y-1/2 bg-transparent opacity-80" />
+        <CarouselPrevious className="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-transparent opacity-80" />
       </Carousel>
     </div>
   );
